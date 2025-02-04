@@ -1,5 +1,4 @@
 import streamlit as st
-import cv2
 import numpy as np
 from ultralytics import YOLO
 from PIL import Image, ImageDraw
@@ -41,7 +40,7 @@ st.markdown("""
 # ✅ Correct way to load YOLO model
 @st.cache_resource
 def load_model():
-    model_path = "E:/New Folder/acne_yolo project/acne/acne-computer-vision_model.pt"
+    model_path = "./acne-computer-vision_model.pt"
     return YOLO(model_path)  # 🔥 Use ultralytics.YOLO instead of torch.hub.load
 
 model = load_model()
