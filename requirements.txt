@@ -1,6 +1,5 @@
 streamlit
 ultralytics
-cv2
 PIL
 tensorflow
 keras
